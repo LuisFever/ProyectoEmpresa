@@ -1,0 +1,75 @@
+/*                              ENCABEZADO                              */
+/* -------------------------------------------------------------------- */
+/* Panel de encabezado */
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 0 auto;
+    background-color: rgb(255, 202, 44);
+
+    margin: 0 auto;
+    margin-top: 60px;
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    justify-content: center; /* Centra los elementos hijos verticalmente */
+    /*justify-content: space-around; /* Distribuir el espacio entre los elementos hijos */
+}
+@media (max-width: 600px) {
+    .body1 {
+        flex-direction: column; /* Cambiar la dirección a columna en pantallas pequeñas */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+}
+
+.btn1{
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 50%;
+    height: 35px;
+}
+
+
+/*USO DEL ACTIVE-HOVER PARA LOS BUTTONS DEL BODY*/
+/*----------------------------------------------------------------------------*/
+.btn1:hover {
+    background-color: gray; /* Cambia el color de texto cuando pasa */
+}
+/* Estilo cuando el label está activo (presionado) */
+.btn1:active {
+    background-color: aquamarine; /* Cambia el color de texto cuando está presionado */
+}
+/* Formato exclusivo de posicion para las letras del encabezado*/
+.lbencabe{
+    margin-top: 10px;
+}
+/*----------------------------------------------------------------------------*/
+/*  Formato para todas las Letras */
+label {
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
