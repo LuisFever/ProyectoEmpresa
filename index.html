@@ -4,9 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" type="text/css" href="proyecto.css">
+        <link rel="stylesheet" type="text/css" href="indexcss.css">
+        <script type="text/javascript" src="indejs.js"></script>
+        
         <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         <script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
+
         <title>Ventana de Acceso al Sistema</title>
 
     </head>
@@ -14,52 +18,72 @@
     <body>
         <!--  SECCION ENCABEZADO  -->
         <!--  **************************************************************************  -->
-        <section class="bodyenca">
-            <img src="Imagenes/logoletrafinal.png" alt="" class="letralogo">
-            <section class="body2">
-                <div class="d-flex ">
-                    <img src="Iconos/hamburger_button_menu_icon_155296.png" class="tlmenu">
-                    <label for="">Menú Tienda</label>
-                </div>
-                
-                <label for="">Servicio Técnico</label>
-                <label for="">Asesoria Hardware</label>
-                <label for="">Diseño Gráfico</label>
-            </section>
+        <header class="">
+            <a href="plataformas.html">
+                <img src="Imagenes/logoletrafinal.png" alt="Logo" class="letralogo">
+            </a>
+            <nav>
+                <img src="Iconos/hamburger_button_menu_icon_155296.png" class="tlmenu" onclick="togglePanel()" alt="Menú">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link "><label class="lbencabe">MENÚ TIENDA</label></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><label class="lbencabe">SERVICIO TÉCNICO</label></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><label class="lbencabe">ASESORIA HARDWARE</label></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><label class="lbencabe">DISEÑO GRÁFICO</label></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><label class="lbencabe">CONTÁCTANOS</label></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><label class="lbencabe">ACERCA DE</label></a></li>
+                </ul>
+            </nav>
+            <div class="d-flex icons">
+                <img src="Iconos/lupa.png" alt="" class="userlogo">
+                <img src="Iconos/usuario.png" alt="" class="userlogo">
+                <img src="Iconos/verificar.png" alt="" class="userlogo">
+            </div>
+        </header>
+        <!-- Panel Desplegable -->
+        <div id="sidePanel">
+            <a href="javascript:void(0)" id="closeBtn" onclick="closePanel()">&times;</a>
+            <a href="#"><label class="lbencabe">HOME</label></a>
+            <a href="#"><label class="lbencabe">MENÚ TIENDA</label></a>
+            <a href="#"><label class="lbencabe">SERVICIO TÉCNICO</label></a>
+            <a href="#"><label class="lbencabe">ASESORÍA HARDWARE</label></a>
+            <a href="#"><label class="lbencabe">DISEÑO GRÁFICO</label></a>
+            <a href="#"><label class="lbencabe">CONTÁCTANOS</label></a>
+            <a href="#"><label class="lbencabe">ACERCA DE</label></a>
+        </div>
 
-        </section>
         <!--  **************************************************************************  -->
+
 
 
 
 
         <!--  SECCION CUERPO CONTENIDO  -->
         <!--  **************************************************************************  -->
-        <section class="bg-danger bodycuerpo">
-            <label>HOLA SUCIOS</label>
+        <main class="bg-primary text-white text-center py-5">
+            <h1>Bienvenido a Empresa Techonology DLX</h1>
+            <p>Soluciones Tecnológicas de Calidad</p>
+        </main>
 
-            <br>
-            <div>
-                <label class="text-white">EMPRESA TECNOLOGY </label>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b><b><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><b><b><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        </section>
         <!--  **************************************************************************  -->
-        
+
+
 
 
 
         <!--  SECCION PIE DE PAGINA  -->
         <!--  **************************************************************************  -->
-        <section class="bodypiepa">
-            <label class="">© Derechos Reservados</label>
-        </section>
+        <footer class="text-center ´py-3">
+            <p>© Derechos Reservados</p>
+        </footer>
+          
         <!--  **************************************************************************  -->
 
         
 
     </body>
 </html>
+
+
+
+
+

@@ -1,0 +1,215 @@
+/*                              ENCABEZADO                              */
+/* -------------------------------------------------------------------- */
+/* Panel de encabezado */
+.bodyenca {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    background-color: #eaf1fb;
+    /*justify-content: space-around; /* Distribuir el espacio entre los elementos hijos */
+}
+@media (max-width: 600px) {
+    .body1 {
+        flex-direction: column; /* Cambiar la dirección a columna en pantallas pequeñas */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+}
+header {
+    background-color: #eaf1fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen del logo */
+.letralogo {
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 250px; /* Anchura deseada */
+    margin-left: 5px;
+    object-fit: contain; /* Asegura que toda la imagen sea vsible son recortes*/
+    display: block; /* Hace que la imagen se comporte como un bloque */
+}
+/*Formato Servicoos e Icono 3 Lineas*/
+.body2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 45px;
+    background-color: #eaf1fb;
+    justify-content: space-around; /* Distribuir el espacio entre los elementos  hijos */
+    margin-top: 15px ;
+}
+
+/*USO DEL ACTIVE-HOVER PARA LA IMAGEN 3 LINEAS DEL ENCABEZADO*/
+/*----------------------------------------------------------------------------*/
+.tlmenu:active {
+    border-color: #0b5ed7; /* Cambia el color del contorno a azul cuando se presiona */
+}
+/* 3 lineas del boton Menu Tienda */
+.tlmenu {
+    /* Asegura que la imagen no exceda el contenedor */
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 50px; /* Anchura deseada */
+    margin-bottom: 0px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease;
+    display: block;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+/* Panel desplegable */
+/*-----------------------------------------------------------*/
+#sidePanel {
+    width: 250px; /* Ancho del panel */
+    height: 100%; /* Altura completa */
+    position: fixed; /* Fijo en la posición */
+    top: 0;
+    left: -250px; /* Oculto fuera de la pantalla inicialmente */
+    background-color: #333; /* Color de fondo del panel */
+    color: white; /* Color de texto */
+    transition: 0.3s; /* Suaviza la transición al abrir/cerrar */
+    padding-top: 60px; /* Espacio superior */
+}
+/* Estilo de los enlaces dentro del panel */
+#sidePanel a {
+    padding: 10px 15px; /* Espaciado de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    color: white; /* Color de texto */
+    display: block; /* Bloque para ocupar toda la anchura */
+    transition: 0.3s; /* Suaviza el cambio de color en hover */
+}
+/* Cambio de color al pasar el mouse por encima de los enlaces */
+#sidePanel a:hover {
+    background-color: #575757; /* Color de fondo al pasar el mouse */
+}
+/* Botón para cerrar el panel */
+#closeBtn {
+    position: absolute; /* Fijo en la esquina */
+    top: 10px;
+    right: 25px;
+    font-size: 36px; /* Tamaño del botón */
+    margin-left: 50px;
+}
+/*-----------------------------------------------------------*/
+
+.nav-link {
+    color: #333;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-link:hover {
+    color: rgb(255, 202, 44);
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+/*USO DEL ACTIVE-HOVER PARA LOS LABELS DEL ENCABEZADO*/
+/*----------------------------------------------------------------------------*/
+.lbencabe:hover {
+    color: rgb(255, 202, 44); /* Cambia el color de texto cuando pasa */
+}
+/* Estilo cuando el label está activo (presionado) */
+.lbencabe:active {
+    color: #0b5ed7; /* Cambia el color de texto cuando está presionado */
+}
+/* Formato exclusivo de posicion para las letras del encabezado*/
+.lbencabe{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*----------------------------------------------------------------------------*/
+
+/*Formato para los iconos de Inicio Sesion, Registrarse y mas*/
+.icons {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 45px;
+    background-color: #eaf1fb;
+    justify-content: space-around; /* Distribuir el espacio entre los elementos  hijos */
+    margin-top: 12px;
+}
+/* Icono de User */
+.userlogo {
+    
+    max-width: 15%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 50px; /* Anchura deseada */
+    margin-left: 5px;
+    object-fit: contain; /* Asegura que toda la imagen sea vsible son recortes*/
+    display: inline-block; /* Hace que la imagen se comporte como un bloque */
+}
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/*                              CUERPO                             */
+/* -------------------------------------------------------------------- */
+.bodycuerpo {
+    flex-direction: column;
+    height: auto; 
+    width: auto; 
+}
+main {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                              PIE DE PAGINA                               */
+/* -------------------------------------------------------------------- */
+.bodypiepa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    margin-left: center;
+    background-color: #eaf1fb;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+/* -------------------------------------------------------------------- */
