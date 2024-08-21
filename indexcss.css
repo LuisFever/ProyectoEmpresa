@@ -36,6 +36,7 @@ header nav {
     object-fit: contain; /* Asegura que toda la imagen sea vsible son recortes*/
     display: block; /* Hace que la imagen se comporte como un bloque */
 }
+
 /*Formato Servicoos e Icono 3 Lineas*/
 .body2 {
     display: flex;
@@ -46,6 +47,7 @@ header nav {
     justify-content: space-around; /* Distribuir el espacio entre los elementos  hijos */
     margin-top: 15px ;
 }
+
 
 /*USO DEL ACTIVE-HOVER PARA LA IMAGEN 3 LINEAS DEL ENCABEZADO*/
 /*----------------------------------------------------------------------------*/
@@ -113,6 +115,9 @@ header nav {
 /*----------------------------------------------------------------------------*/
 
 
+
+/*----------------------------------------------------------------------------*/
+
 /*USO DEL ACTIVE-HOVER PARA LOS LABELS DEL ENCABEZADO*/
 /*----------------------------------------------------------------------------*/
 .lbencabe:hover {
@@ -127,7 +132,6 @@ header nav {
     margin-top: 10px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 /*----------------------------------------------------------------------------*/
 
@@ -152,7 +156,17 @@ header nav {
     display: inline-block; /* Hace que la imagen se comporte como un bloque */
 }
 
+/*----------------------------------------------------------------------------*/
+/*  Formato para todas las Letras */
+label {
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
 /* -------------------------------------------------------------------- */
+
+
 
 
 
@@ -172,6 +186,7 @@ header nav {
     height: auto; 
     width: auto; 
 }
+
 main {
     background-color: #0d6efd;
     color: white;
@@ -180,6 +195,9 @@ main {
 }
 
 /* -------------------------------------------------------------------- */
+
+
+
 
 
 
@@ -213,3 +231,4 @@ footer {
 }
 
 /* -------------------------------------------------------------------- */
+
